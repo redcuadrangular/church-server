@@ -6,12 +6,10 @@ Es importante que este servidor posea una instalación limpia, es decir que no t
 Entendiendo que este servidor se utilizará para hacer un servidor para la red cuadrangular dedicada a un país de latinoamérica.
 
 Ejecutar esto como usuario sudo o desde la cuenta root.
-`curl -1sLf \
-  'https://dl.cloudsmith.io/public/redcuadrangular/server/setup.rpm.sh' \
-  | sudo -E bash`
+`sudo dnf copr enable neftaliyagua/foursquare-church-server`
   
   Luego realizar la instalación de 
-  `dnf install redcuadrangular-server -y`
+  `dnf install foursquare-church-server`
   
   Si la distribución no es Fedora 35 sino 34 en su lugar no se preocupe, el paquete de instalación se hará cargo de la actualización.
   
